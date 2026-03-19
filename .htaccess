@@ -1,0 +1,31 @@
+# Отключаем кэширование по умолчанию для всех файлов
+Header unset Expires
+Header unset Cache-Control
+Header unset Pragma
+
+<FilesMatch "\.(html|htm|js|css|php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
+
+# Отключаем ETags
+Header unset ETag
+FileETag None
+
+# Включаем кэширование ТОЛЬКО для картинок и шрифтов на 1 сутки
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Картинки
+    <FilesMatch "\.(jpg|jpeg|png|gif|svg|ico|webp)$">
+        ExpiresDefault "access plus 1 day"
+        Header set Cache-Control "public, immutable"
+    </FilesMatch>
+
+    # Шрифты
+    <FilesMatch "\.(woff|woff2|ttf|eot|otf)$">
+        ExpiresDefault "access plus 1 day"
+        Header set Cache-Control "public, immutable"
+    </FilesMatch>
+</IfModule>

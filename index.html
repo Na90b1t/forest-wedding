@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Ирины и Сергея</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon/nature_b.png" type="image/png">
+</head>
+
+<body class="body">
+    <main class="main">
+        <!-- Главный экран -->
+        <section id="heroImg" class="section section--heroImg">
+            <div class="frame frame--hero">
+                <img src="assets/hero/tea.jpg" alt="kiss" class="img">
+            </div>
+        </section>
+        <section id="heroName" class="section section--heroName">
+            <h1 class="title title--hero">Серёга и Ирка</h1>
+        </section>
+        <section id="heroDate" class="section section--heroDate">
+            <div class="butterfly-wrap">
+                <div id="butterfly-animation-date" class="butterfly-animation"></div>
+                <p class="text text--date">30.08.2025</p>
+            </div>
+        </section>
+
+        <!-- Приглашение -->
+        <section id="welcome" class="section section--welcome">
+            <h2 class="title title--welcome">Дорогие наши</h2>
+            <p class="text text--welcome-subtitle">РОДНЫЕ И ДРУЗЬЯ!</p>
+            <p class="text text--welcome-message">
+                Ну вот и всё, дождались... Мы решили сыграть свадьбу!
+            </p>
+        </section>
+
+        <!-- История любви -->
+        <section id="story" class="section section--story">
+            <h2 class="title title--story">История</h2>
+            <p class="text text--story-subtitle">нашей любви</p>
+            <!-- <div class="story__description">
+                <p class="text text--story-description">
+                    Нас познакомили наши друзья. До этого мы однажды виделись, но не придавали этой встречи особого значения.
+                </p>
+                <p class="text text--story-description">
+                    Всё изменилось весной, в апреле, когда наши друзья убедили нас встретиться. Они были уверены, что мы похожи и обязательно должны поближе познакомиться. На этой встрече мы вскоре поняли: мы особенные друг для друга.
+                </p>
+                <p class="text text--story-description">
+                    С тех пор мы стали проводить все больше времени вместе. Часто гуляли по городу, смотрели фильмы, ходили на концерты и просто болтали до поздней ночи. Вскоре мы осознали, что стали неотъемлемой частью жизни друг друга. Мы были всегда рядом, даже на расстоянии, поддерживали друг друга и делились своими мечтами и планами на будущее.
+                </p>
+                
+            </div> -->
+            <div class="story__description">
+                <p class="text text--story-description">
+                    В темных глубинах пуэра, на вершинах Уральских гор, в леденящих  озёрах Карелии родилась наша история. История двух лесных спутников, которые пережили расстояние и взросление вместе. Которые соединили  души и разум друг друга в песнь ромашки и лягушки. И будут они нести весть о их сказочном союзе. Приглашаем стать свидетелями их воссоединения.
+                </p>
+            </div>
+        </section>
+
+        <!-- Галерея -->
+        <section id="gallery" class="section section--gallery">
+            <div class="gallery-container slider-track">
+                <img src="assets/gallery/ural_sqw.jpg" alt="Фото 1" class="gallery-image">
+                <img src="assets/gallery/castle.jpg" alt="Фото 2" class="gallery-image">
+                <img src="assets/gallery/skate.jpg" alt="Фото 3" class="gallery-image gallery-image--circle">
+                <img src="assets/gallery/kenic.jpg" alt="Фото 4" class="gallery-image">
+                <img src="assets/gallery/solor_sqw.jpg" alt="Фото 5" class="gallery-image">
+            </div>
+
+            <div class="gallery__button-wrap">
+                <button id="prev" class="slider-button slider-button--left"></button>
+                <button id="next" class="slider-button"></button>
+            </div>
+        </section>
+
+        <!-- Календарь -->
+        <section id="calendar" class="section section--calendar">
+            <div class="calendar-container">
+                <h2 class="title title--calendar">Август 2025</h2>
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>ПН</th>
+                            <th>ВТ</th>
+                            <th>СР</th>
+                            <th>ЧТ</th>
+                            <th>ПТ</th>
+                            <th>СБ</th>
+                            <th>ВС</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td class="today">30</td>
+                            <td>31</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Локация -->
+        <section id="location" class="section section--location">
+            <h2 class="title title--location">Локация</h2>
+            <div title="Адрес ресторана Terrine" class="section__address">
+                <p class="text text--location">Наша свадьбва пройдет в локации «Геокупол»</p>
+                <p class="text text--location">пикник-парк Новая Боевка, город Курск</p>
+            </div>
+            <div id="locationReference" class="section__locationReference">
+                <div class="frame frame--location">
+                    <img src="assets/location/location.jpeg" alt="geodomes" class="img img--location">
+                </div>
+                <div class="section__locationInfo">
+                    <div class="section__locationText">
+                        <p class="text text--locationInfo">Сбор гостей</p>
+                        <p class="text text--locationInfo text--locationTime">15:30</p>
+                    </div>
+                    <!-- <div class="button text--locationInfo">Как добраться</div> -->
+                    <a href="https://yandex.ru/maps/-/CHXWmQZR" target="_blank" class="button text--locationInfo">Как добраться</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Программа -->
+        <section id="program" class="section section--program">
+            <h2 class="title title--program">
+                <i class="title__first">Программа</i>
+                <span class="title__second">мероприятия</span>
+            </h2>
+            <div class="section__program">
+                <div class="section__cell">
+                    <div class="section__item">
+                        <div class="section__ic">
+                            <img src="assets/locationHeart.svg" alt="" class="transition" >
+                        </div>
+
+                        <div class="section__tx">
+                            <div class="section__time" data-sm-text="TIMING_1_0">15:00</div>
+                            <div class="section__t" data-sm-text="TIMING_1_1">Сбор гостей</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__cell">
+                    <div class="section__item  section__item--revert">
+                        <div class="section__ic">
+                            <img src="assets/ic-program2.svg" alt="" class="transition" >
+                        </div>
+
+                        <div class="section__tx section__tx--mod">
+                            <div class="section__time" data-sm-text="TIMING_2_0">16:00</div>
+                            <div class="section__t" data-sm-text="TIMING_2_1">Церемония</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__cell">
+                    <div class="section__item">
+                        <div class="section__ic">
+                            <img src="assets/ic-program3.svg" alt="" class="transition" >
+                        </div>
+
+                        <div class="section__tx">
+                            <div class="section__time" data-sm-text="TIMING_3_0">17:00</div>
+                            <div class="section__t" data-sm-text="TIMING_3_1">Начало банкета</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__cell">
+                    <div class="section__item section__item--revert">
+                        <div class="section__ic">
+                            <img src="assets/wedCake.svg" alt="" class="transition" >
+                        </div>
+
+                        <div class="section__tx section__tx--mod">
+                            <div class="section__time" data-sm-text="TIMING_4_0">20:30</div>
+                            <div class="section__t" data-sm-text="TIMING_4_1">Свадебный торт</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__cell">
+                    <div class="section__item">
+                        <div class="section__ic">
+                            <img src="assets/ic-program4.svg" alt="" class="transition" >
+                        </div>
+
+                        <div class="section__tx">
+                            <div class="section__time" data-sm-text="TIMING_4_0">23:00</div>
+                            <div class="section__t" data-sm-text="TIMING_4_1">Завершение вечера</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дресс код -->
+        <section id="dress-code" class="section section--dress-code">
+            <h2 class="title title--dress-code">Дресс<span class="title--dress-code-span">-</span>код</h2>
+            <p class="text text--dress-code">
+                Мы очень ждём и готовимся к нашему незабываемому дню! Поддержите нас Вашими улыбками и объятиями, а также красивыми нарядами в палитре мероприятия.
+            </p>
+            <div class="section__palette">
+                <div class="section__color section__color--yellow"></div>
+                <div class="section__color section__color--yellowe"></div>
+                <div class="section__color section__color--green"></div>
+                <div class="section__color section__color--olive"></div>
+                <div class="section__color section__color--greeny"></div>
+                <div class="section__color section__color--limone"></div>
+            </div>
+
+            <div class="dress-code__gallery">
+                <div class="dress-code__gallery-row">
+                    <img src="assets/dress-code/girls_green_palete.jpg" alt="Фото 2" class="dress-code__image dress-code__image--br-oval">
+                    <img src="assets/dress-code/m_b.jpg" alt="Фото 3" class="dress-code__image">
+                    <img src="assets/dress-code/girls_in_yellow.jpg" alt="Фото 4" class="dress-code__image">
+                </div>
+                <div class="dress-code__gallery-row">
+                    <img src="assets/dress-code/y_m_b.jpg" alt="Фото 2" class="dress-code__image">
+                    <img src="assets/dress-code/girl_in_green.jpg" alt="Фото 3" class="dress-code__image">
+                    <img src="assets/dress-code/girl_in_yellow.jpg" alt="Фото 4" class="dress-code__image dress-code__image--br-circle">
+                    <img src="assets/dress-code/old.jpg" alt="Фото 5" class="dress-code__image">
+                </div>
+            </div>
+
+            <div id="slider" class="dress-code__slider">
+                <div class="dress-code__slider-container">
+                    <div id="slider-gallery-1" class="dress-code__slider-gallery track-c">
+                        <div class="dress-code__gallery-row">
+                            <img src="assets/dress-code/girls_in_yellow.jpg" alt="Фото 2" class="dress-code__image dress-code__image--br-oval">
+                        </div>
+                        <div class="dress-code__gallery-row">
+                            <img src="assets/dress-code/m.jpg" alt="Фото 2" class="dress-code__image">
+                            <img src="assets/dress-code/y_m.jpg" alt="Фото 3" class="dress-code__image dress-code__image--br-circle">
+                        </div>
+                    </div>
+
+                    <div id="slider-gallery-2" class="dress-code__slider-gallery track-c track">
+                        <div class="dress-code__gallery-row">
+                            <img src="assets/dress-code/girls_green_palete.jpg" alt="Фото 2" class="dress-code__image dress-code__image--cover dress-code__image--br-oval">
+                        </div>
+                        <div class="dress-code__gallery-row">
+                            <img src="assets/dress-code/y_l.jpg" alt="Фото 2" class="dress-code__image">
+                            <img src="assets/dress-code/y.jpg" alt="Фото 3" class="dress-code__image dress-code__image--br-circle">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dress-code__button-wrap">
+                    <button class="slider-button slider-button--left" onclick="toggleClass()"></button>
+                    <button class="slider-button" onclick="toggleClass()"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши пожелания -->
+        <section id="story" class="section section--wish">
+            <h2 class="title title--wish">Наши</h2>
+            <p class="text text--wish-subtitle">пожелания</p>
+            <div class="story__description story__description--wish">
+                <p id="slider-wish-1" class="text text--wish-description track-c">
+                    Пожалуйста, не дарите нам цветы! Мы не успеем насладиться их красотой и ароматом. 
+                    Если хотите подарить нам ценный и нужный подарок, мы будем очень благодарны за вклад в бюджет нашей молодой семьи.
+                    А если хочется подарить что-то особенное, то отличным выбором будет китайский чай — его можно заказать <a href="https://daochai.ru" target="_blank" class="text text--locationHref">здесь</a>.
+                </p>
+                <p id="slider-wish-2" class="text text--wish-description track-c track">
+                    Свадьба для нас – особенный день. Мы хотим разделить его с Вами, но сохранить непринужденную обстановку. 
+                    Поэтому просим обойтись без официальных речей, криков «Горько» и прочих формальностей.
+                </p>
+            </div>
+            <div class="wish__button-wrap">
+                <button class="slider-button slider-button--left arrow-white" onclick="toggleClass1()"></button>
+                <p id="arrow-wish-1" class="text text--wish-subtitle wish-count">1/2</p>
+                <p id="arrow-wish-2" class="text text--wish-subtitle wish-count hide">2/2</p>
+                <button class="slider-button arrow-white" onclick="toggleClass1()"></button>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="story" class="section section--story">
+            <h2 class="title title--contact">Контакты</h2>
+            <div class="story__description">
+                <p class="text text--story-description">
+                    По всем вопросам, связанным с мероприятием, вы можете связаться с нашим ведущим:
+                </p>
+                <div class="text-wrap">
+                    <h3 class="title title--contact">
+                        Денис Гришко
+                    </h3>
+                    <p class="text text--phone" title="Номер телефона ведущего Дениса Гришко">
+                        <a class="href-color" href="tel:+79003663864">+7 904 521-21-60</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Фон -->
+        <section id="heroImg" class="section section--fon">
+            <img src="assets/fon/sea.jpg" alt="sea" class="img">
+        </section>
+
+        <section id="form" class="section section--form">
+            <h2 class="title title--form">Подтвердите присутствие</h2>
+            <p class="text text--form-subtitle">на нашей свадьбе до 10.08.2025</p>
+
+            <form id="contactForm" action="send.php" method="POST" class="form-container">
+                <div class="butterfly-wrap butterfly-wrap--form">
+                    <div id="butterfly-animation" class="butterfly-animation butterfly-animation--form"></div>
+                    <input class="text text--input" type="text" placeholder="Ваше имя и фамилия" required>
+                </div>
+                <h3 class="title title--form-q">Планируете ли Вы присутствовать?</h3>
+                <div class="radio-group radio-group--decision">
+                    <label class="text text--decision">
+                        <input type="radio" name="attendance" value="yes" checked>
+                        Да, с удовольствием
+                    </label>
+                    <label class="text text--decision">
+                        <input type="radio" name="attendance" value="no">
+                        Нет, к сожалению
+                    </label>
+                </div>
+                <h3 class="title title--form-q">Ваши предпочтения</h3>
+                <div class="radio-group radio-group--j-i-left">
+                    <label class="text alco-label">
+                        <input type="radio" name="drink" value="champagne">
+                        Шампанское
+                    </label>
+                    <label class="text alco-label">
+                        <input type="radio" name="drink" value="white-wine">
+                        Белое вино
+                    </label>
+                    <label class="text alco-label">
+                        <input type="radio" name="drink" value="red-wine">
+                        Красное вино
+                    </label>
+                    <label class="text alco-label">
+                        <input type="radio" name="drink" value="whiskey">
+                        Виски
+                    </label>
+                    <label class="text alco-label">
+                        <input type="radio" name="drink" value="vodka">
+                        Водка
+                    </label>
+                    <label class="text alco-label">
+                        <input type="radio" name="drink" value="samogon">
+                        Самогон
+                    </label>
+                    <label class="text alco-label m-auto non-alco-label">
+                        <input type="radio" name="drink" value="non-alcoholic">
+                        Не пью алкоголь
+                    </label>
+                </div>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <h2 class="title title--program">
+            <i class="title__first title__first--footer">До скорой встречи!</i>
+            <span class="title__second title__second--footer">с любовью,</span>
+        </h2>
+        <h2 class="title title--hero-footer">Ирка и Серёга</h2>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Подключение библиотеки -->
+    <!-- <script src="https://unpkg.com/lottie-web@5.7.6/build/player/lottie.js"></script> -->
+    <script src="lottie.js"></script>
+    <script>
+    lottie.loadAnimation({
+        container: document.getElementById('butterfly-animation-date'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'assets/json/Butterfly.json'
+    });
+    lottie.loadAnimation({
+        container: document.getElementById('butterfly-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'assets/json/Butterfly.json'
+    });
+    </script>
+</body>
+</html>
